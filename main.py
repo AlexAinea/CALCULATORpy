@@ -88,7 +88,34 @@ butt_eight.grid(row=2, column=1, padx=8, pady=10)
 butt_nine = Button(input_frame, text="9", command=lambda: update_to_nine(), width=7, height=3)
 butt_nine.grid(row=2, column=2, padx=8, pady=10)
 
-# Function to update the output display
+butt_point = Button(input_frame, text=".", command=lambda: update_to_point(), width=7, height=3)
+butt_point.grid(row=3, column=0, padx=8, pady=10)
+
+butt_zero = Button(input_frame, text="0", command=lambda: update_to_zero(), width=7, height=3)
+butt_zero.grid(row=3, column=1, padx=8, pady=10)
+
+butt_equals = Button(input_frame, text="=", command=lambda: update_to_equals(), width=7, height=3)
+butt_equals.grid(row=3, column=2, padx=8, pady=10)
+
+butt_add = Button(input_frame, text="+", command=lambda: update_to_add(), width=7, height=3)
+butt_add.grid(row=4, column=0, padx=8, pady=10)
+
+butt_subtract = Button(input_frame, text="-", command=lambda: update_to_subtract(), width=7, height=3)
+butt_subtract.grid(row=4, column=1, padx=8, pady=10)
+
+butt_multiply = Button(input_frame, text="*", command=lambda: update_to_multiply(), width=7, height=3)
+butt_multiply.grid(row=4, column=2, padx=8, pady=10)
+
+butt_divide = Button(input_frame, text="/", command=lambda: update_to_divide(), width=7, height=3)
+butt_divide.grid(row=5, column=0, padx=8, pady=10)
+
+butt_power = Button(input_frame, text="^", command=lambda: update_to_power(), width=7, height=3)
+butt_power.grid(row=5, column=1, padx=8, pady=10)
+
+butt_modulo = Button(input_frame, text="%", command=lambda: update_to_modulo(), width=7, height=3)
+butt_modulo.grid(row=5, column=2, padx=8, pady=10)
+
+# Functions to update the output display
 def update_to_one():
     pass
 
@@ -114,6 +141,33 @@ def update_to_eight():
     pass
 
 def update_to_nine():
+    pass
+
+def update_to_point():
+    pass
+
+def update_to_zero():
+    pass
+
+def update_to_equals():
+    pass
+
+def update_to_add():
+    pass
+
+def update_to_subtract():
+    pass
+
+def update_to_multiply():
+    pass
+
+def update_to_divide():
+    pass
+
+def update_to_power():
+    pass
+
+def update_to_modulo():
     pass
 
 root.mainloop()
